@@ -57,6 +57,7 @@ while run != 'no':
         of action is to blow up an undersea gas pipeline to save the environment. It turns out; subsequently,
         you also make a bunch of money.''')
 
+    cont = input('\npress enter to continue...')
     # decision 2
     print(f'\nYou get a phone call: “{prefix} president, there is a gigantic super-secret spooky spy balloon floating over the country! What are your orders {prefix} president?”')
     shootOrNot = input('\nWill you order it to be shot down? Type yes or no:  ').lower()
@@ -72,6 +73,7 @@ while run != 'no':
         The gigantic super-secret spooky spy balloon continues its precisely charted course and finally 
         makes it to its destination, where it just hovers mysteriously for no apparent reason.''')
 
+    cont = input('\npress enter to continue...')
     #ending 1
     if golfOrNot == 'yes' and shootOrNot == 'yes':
         print(f'''\n
