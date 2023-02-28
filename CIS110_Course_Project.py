@@ -37,15 +37,15 @@ while run != 'no':
     #beginning of story
     print('\nYou are the president of the United States')
     print('It is the year 2023, some time in February.')
-    print('From every corner of globe, the world is at peace and the economy is better than its ever been.')
-    print(f'You and vice president {vp} are at the White House contemplating countless glabal issues.')
-    print(f'You both get bored and agree you might need a break')
+    print('From every corner of the globe, the world is at peace and the economy is better than it\'s ever been.')
+    print(f'You and vice president {vp} are at the White House contemplating countless global issues.')
+    print(f'You both get bored and agree you might need a break.')
     print(f'Vice president {vp} asks if you want to go play 18 holes of golf.')
 
     #decision 1
-    golfOrNot = input(f'\nWill you play golf with {vp}(yes) or continue you presidential duty(no)?  Type yes or no:  ').lower()
+    golfOrNot = input(f'\nWill you play golf with {vp} (yes) or continue your presidential duty (no)?  Type yes or no:  ').lower()
     while golfOrNot not in ('yes', 'no'):
-        golfOrNot = input('Will you play golf with continue you presidential duty?  Type yes or no:  ').lower()
+        golfOrNot = input('Will you play golf with {vp} (yes) or continue your presidential duty (no)?  Type yes or no:  ').lower()
     if golfOrNot == 'yes':
         print(f'''\n
         You and VP {vp} fly in your private helicopters to the Pohick Bay golf course, and you end
@@ -54,7 +54,7 @@ while run != 'no':
     else:
         print(f'''\n
         Instead of playing golf, you continue contemplating global issues and decide the best course 
-        of action is to blow up an undersea gas pipeline to save the environment. It turns out, subsequently
+        of action is to blow up an undersea gas pipeline to save the environment. It turns out; subsequently,
         you also make a bunch of money.''')
 
     # decision 2
@@ -65,7 +65,7 @@ while run != 'no':
     if shootOrNot == 'yes':
         print('''\n
         The military carries out your orders and shoots down the gigantic super-secret spooky spy balloon 
-        with a high explosive missile so that they can have a much easier time recovering pieces of 
+        with a high-explosive missile so that they can have a much easier time recovering pieces of 
         wreckage from the ocean floor for the intelligence, of course.''')
     else:
         print('''\n
@@ -73,7 +73,7 @@ while run != 'no':
         makes it to its destination, where it just hovers mysteriously for no apparent reason.''')
 
     #ending 1
-    if golfOrNot and shootOrNot == 'yes':
+    if golfOrNot == 'yes' and shootOrNot == 'yes':
         print(f'''\n
         While focusing all of your attention on the gigantic super-secret spooky spy balloon and your golf game,
         some aliens arrive in their weird car-sized octagonal-shaped spacecraft and warn you that your planet 
@@ -81,7 +81,7 @@ while run != 'no':
         to {increaseOrDecrease} your budget for military spending and {opposite} your budget for social security 
         and education.''')
     #ending 2
-    elif golfOrNot and shootOrNot == 'no':
+    elif golfOrNot == 'no' and shootOrNot == 'no':
         print(f'''\n
         While hovering over Scotland, the gigantic super-secret spooky spy balloon successfully summons a creature 
         of the deep. While a bunch of elites are meeting in Davos, someone knocks on the door. Will Bates opens the 
@@ -101,4 +101,4 @@ while run != 'no':
         am I right?” Will bates slams the door.''')
     run = input('\nWould you you like to run it agian? yes or no:  ').lower()
     while run != 'yes' and run != 'no':
-        input('Must type yes or no:  ')
+        run = input('Must type yes or no:  ')
